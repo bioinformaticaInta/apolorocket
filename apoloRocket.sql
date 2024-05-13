@@ -146,7 +146,6 @@ CREATE TABLE offtarget_comparison(
 	project_id INT,
 	query_region_id INT,
 	selected_region BOOLEAN NOT NULL DEFAULT false,
-	UNIQUE(project_id, query_region_id, reference_id),
 	PRIMARY KEY(id),
 	CONSTRAINT fk_otc_project
 		FOREIGN KEY(project_id)
